@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+ <title>desafio3</title>
+
+<script>
+
+  function pulalinha() {
+
+     document.write("<br><br>")
+  }
+
+  function mostra (frase) {
+
+      document.write(frase)
+      pulalinha();
+  }
+   
+var nome=prompt("Digite seu nome")
+
+var nota1=parseInt(prompt("Digite a  primeira nota"));
+var nota2=parseInt(prompt("Digite a  segunda nota"));
+var nota3=parseInt(prompt("Digite a  terceira nota"));
+var media=Math.round((nota1 + nota2 + nota3)/3)
+
+mostra(nome +  " " + "  sua media é " + media )
+
+
+	if (media >=6 ) {
+		mostra("Parabens voce foi aprovado!");
+		}
+
+	if (media <6) {
+		mostra("Você foi reprovado!");
+	}
+	
+</script>
